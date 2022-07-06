@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="mapperInterface.BooksMapper">
+  
+  <select id = "selectOne" resultType="vo.BooksVO">	
+  	select *
+  	from memberall
+  	where codename = #{codename}
+  </select>
+  	
+  <select id ="allList" resultType = "vo.BooksVO">
+  	select * from memberall order by codename desc
+  </select>
+  	
+  <insert id = "insert">
+  	insert into memberall(codename,content) values(#codename},#{content})
+  </insert>
+  </mapper>
