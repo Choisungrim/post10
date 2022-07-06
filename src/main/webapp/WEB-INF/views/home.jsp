@@ -23,6 +23,7 @@ body {
 </style>
 </head>
 <body>
+	<h1 class="hidden">git commit</h1>
 	<div class="text-box">
 		<div class="heading">To infinity and Beyond</div>
 		<div class="button-wrapper">
